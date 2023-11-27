@@ -86,7 +86,7 @@ def save_image(img):
     img.save("image.png")
 
 def save_video(video):
-    video[0].save("video.gif", save_all=True, append_images=video[1:])
+    video[0].save("video.png", interlace=True, save_all=True, append_images=video[1:])
         
 def _get_size(figure):
     width = figure.figsize[0] * FIGSIZE_PIXEL_SIZE + PADDING * 2
