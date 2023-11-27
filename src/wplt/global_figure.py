@@ -1,6 +1,20 @@
+"""Global figure module.
+
+Contains the global figure that is available directly 
+via 'wplt'. There is a special exception in the pass-through
+functions, '.preview()' and '.save()' causes the global figure
+to reset to ensure safety.
+
+Example:
+    wplt.plot(X, Y)
+    wplt.preview()
+"""
+
 from .figure import Figure
 
 global_fig = Figure()
+
+# -- Pass-through functions --
 
 def plot(*args, **kwargs):
     global_fig.plot(*args, **kwargs)
