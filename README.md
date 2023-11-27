@@ -10,7 +10,6 @@
 
 ## About The Project
 
-![](https://github.com/Neobyte01/WPLT/blob/main/assets/showcase.png)
 
 WPLT is an open-source plotting library built in and for Python. Using WPLT you can plot data into figures, preview them and save them into files, with multiple options for adding a cartesian plane, labeled legend, and more. It closely imitates the popular Python library Matplotlib, but includes functionality to animate data with time-based variables. This library was built and developed for educational purposes, and is therefore not meant as a serious contender to other popular options. and developed for educational purposes.
 
