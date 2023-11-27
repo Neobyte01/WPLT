@@ -184,6 +184,10 @@ class CartesianPlane:
             elif old_cmp < new_cmp:
                 decimals -= 1 
 
+        # Check for 0 case
+        if num == 0:
+            return 0, 0
+
         # Check for negative number
         if num < 0 and start > 0:
             start *= -1
@@ -205,7 +209,7 @@ class CartesianPlane:
         x_step, x_decimals = self._round_steps(self.get_xdelta() / self.X_TICKS) 
         x, _ = self._round_steps(self.x_left)
 
-        while (x <= self._round_steps(self.x_right)[0]):
+        while (x <= self.x_right):
             yield x
             x = round(x+x_step, x_decimals)
 
@@ -213,7 +217,7 @@ class CartesianPlane:
         y_step, y_decimals = self._round_steps(self.get_ydelta() / self.Y_TICKS) 
         y, _ = self._round_steps(self.y_bottom)
 
-        while (y <= self._round_steps(self.y_top)[0]):
+        while (y <= self.y_top):
             yield y
             y = round(y+y_step, y_decimals)
 
