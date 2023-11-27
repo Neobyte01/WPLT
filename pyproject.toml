@@ -1,26 +1,37 @@
 [project]
 name = "wplt"
-version = "1.0.0"
+version = "0.9.0"
 authors = [
     { name="Emil Wagman", email="emilwagman@orpose.com" }
 ]
-description = "[To be written]"
+description = "Python plotting package"
 readme = "README.md"
+license = { file="LICENSE" }
 requires-python = ">=3.8"
 dependencies = [
-    "numpy >= 1.25.0",
+    "numpy >= 1.21.0",
     "Pillow >= 10.1.0"
 ]
 classifiers = [
+    "Development Status :: 4 - Beta",
     "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Visualization",
 ]
 
-[testpypi]
-username = "__token__"
-password = "pypi-AgENdGVzdC5weXBpLm9yZwIkOGM5MzMwMjAtN2I0OC00MWQ3LWE5YTktZjg4Zjk2MGM3ZGZmAAIqWzMsIjg5NGVmZTRlLTIzODUtNDZkNy04OWZiLTM1ZWE1NjljYzBhZSJdAAAGIClzBA61vCZpRBP9RmabZNmGafFlNF60K4x6E_Is7u4K"
+[project.urls]
+"Documentation" = "https://github.com/Neobyte01/WPLT/wiki"
+"Source Code"   = "https://github.com/Neobyte01/WPLT"
 
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
+
+[tool.hatch.build]
+exclude = ["/dist"]

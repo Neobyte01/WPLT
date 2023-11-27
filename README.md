@@ -1,49 +1,25 @@
-<!-- PROJECT LOGO -->
 <br />
 <div align="center">
   <a href="https://github.com/Neobyte01/WPLT">
-    <img class="logo-light" src="assets/logo.png" alt="Logo" height="110">
+    <img class="logo-light" src="assets/logo.png" alt="WPLT logo" height="110">
   </a>
   <h3 align="center">WPLT</h3>
-  <p align="center">project_description</p>
+  <p align="center">Plotting with Python: Straight-forward data visualization</p>
 </div>
 
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+![](https://github.com/Neobyte01/WPLT/blob/main/assets/showcase.png)
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
-
+WPLT is an open-source plotting library built in and for Python. Using WPLT you can plot data into figures, preview them and save them into files, with multiple options for adding a cartesian plane, labeled legend, and more. It closely imitates the popular Python library Matplotlib, but includes functionality to animate data with time-based variables. This library was built and developed for educational purposes, and is therefore not meant as a serious contender to other popular options. and developed for educational purposes.
 
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
-
-### Installation
-
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/github_username/repo_name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
-
-
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
+- [Installation](https://github.com/Neobyte01/WPLT/wiki/Installation)
+- [Quickstart](https://github.com/Neobyte01/WPLT/wiki/Quickstart)
+- [API reference](https://github.com/Neobyte01/WPLT/wiki/API)
 
 ## License
 
-Distributed under the MIT License. See `LICENSE` for more information.
+Distributed under the MIT License. See [license](https://github.com/Neobyte01/WPLT/blob/main/LICENSE) for more information.
