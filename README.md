@@ -19,26 +19,11 @@ WPLT is an open-source plotting library built in and for Python. Using WPLT you 
 
 ## Showcase
 
-A simle demo of what you can do with WPLT in a few lines of code.
+A simle demonstration of what you can do with WPLT in just a few lines of code.
 
 <div align="left">
   <img src="assets/showcase.png" alt="WPLT showcase" height=400 />
 </div>
-
-```python
-import wplt
-import numpy as np
-
-c = wplt.TimeSeries(0, 2*np.pi)
-X = np.linspace(0, 4*np.pi, 100)
-Y = wplt.TimeSeries.apply(np.sin, c+X)
-
-wplt.plot(X, Y)
-wplt.xaxis()
-wplt.yaxis()
-wplt.grid()
-wplt.save()
-```
 
 ## License
 
