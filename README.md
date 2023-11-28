@@ -1,7 +1,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/Neobyte01/WPLT">
-    <img src="assets/logo.png" alt="WPLT logo" height="110">
+    <img src="https://raw.githubusercontent.com/Neobyte01/wplt/main/assets/logo.png" alt="WPLT logo" height="110">
   </a>
   <h3 align="center">WPLT</h3>
   <p align="center">Plotting with Python: Straight-forward data visualization</p>
@@ -22,7 +22,7 @@ WPLT is an open-source plotting library built in and for Python. Using WPLT you 
 An example of what you can achieve with WPLT in just a few lines of code.
 
 <div align="left">
-  <img src="assets/showcase.png" alt="WPLT showcase" height=400 />
+  <img src="https://raw.githubusercontent.com/Neobyte01/wplt/main/assets/showcase.png" alt="WPLT showcase" height=400 />
 </div>
 
 ## License

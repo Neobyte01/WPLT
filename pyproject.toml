@@ -1,6 +1,6 @@
 [project]
 name = "wplt"
-version = "0.9.0"
+version = "1.0.1"
 authors = [
     { name="Emil Wagman", email="emilwagman@orpose.com" }
 ]
@@ -13,15 +13,11 @@ dependencies = [
     "Pillow >= 10.1.0"
 ]
 classifiers = [
-    "Development Status :: 4 - Beta",
+    "Development Status :: 5 - Production/Stable",
     "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.8",
-    "Programming Language :: Python :: 3.9",
-    "Programming Language :: Python :: 3.10",
-    "Programming Language :: Python :: 3.11",
-    "Programming Language :: Python :: 3.12",
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
+    "Intended Audience :: Education",
     "Topic :: Scientific/Engineering :: Visualization",
 ]
 
