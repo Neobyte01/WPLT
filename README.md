@@ -1,6 +1,5 @@
 [![PyPI version](https://badge.fury.io/py/wplt.svg)](https://badge.fury.io/py/wplt)
 
-<br />
 <div align="center">
   <a href="https://github.com/Neobyte01/WPLT">
     <img src="https://raw.githubusercontent.com/Neobyte01/wplt/main/assets/logo.png" alt="WPLT logo" height="110">
