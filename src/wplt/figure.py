@@ -7,7 +7,7 @@ inside the Figure class.
 
 import logging
 from .output import convert_to_image, convert_to_video, preview_image, save_image, save_video
-from .time_series import TimeSeries
+from .time_series import TimeSeries, TimeObjectAbstract
 from collections.abc import Iterable
 
 class Figure:
@@ -56,16 +56,16 @@ class Figure:
         - width: int
             Width of line or diameter width of points.
         """
-        if not isinstance(X, Iterable):
+        if not isinstance(X, Iterable | TimeObjectAbstract):
             raise TypeError("'X' must be an iterable")
         
-        if not isinstance(Y, Iterable):
+        if not isinstance(Y, Iterable | TimeObjectAbstract):
             raise TypeError("'Y' must be an iterable")
 
-        if len(X) == 0 or len(Y) == 0:
+        if (isinstance(X, Iterable) and len(X) == 0) or (isinstance(Y, Iterable) and len(Y) == 0):
             raise ValueError("'X' and 'Y' must contain at least one value.")
         
-        if len(X) != len(Y):
+        if isinstance(X, Iterable) and isinstance(Y, Iterable) and len(X) != len(Y):
             raise ValueError(f"Length of 'X' and 'Y' must match.")
         
         plot = None
@@ -77,7 +77,7 @@ class Figure:
         else:
             plot = Plot(X, Y, label, width, scatter)
 
-        logging.info(f"{'Scattering' if scatter else 'Plotting' } {self.plots[-1]} on {self}")
+        logging.info(f"{'Scattering' if scatter else 'Plotting' } {plot} on {self}")
 
         # Pre-calculate plot values and cartesian plane
         plot.evaluate()
@@ -214,16 +214,16 @@ class Plot:
     """
 
     def __init__(self, X, Y, label, width, scatter=False):
-        if not isinstance(X, Iterable):
+        if not isinstance(X, Iterable | TimeObjectAbstract):
             raise TypeError("'X' must be an iterable")
         
-        if not isinstance(Y, Iterable):
+        if not isinstance(Y, Iterable | TimeObjectAbstract):
             raise TypeError("'Y' must be an iterable")
 
-        if len(X) == 0 or len(Y) == 0:
+        if (isinstance(X, Iterable) and len(X) == 0) or (isinstance(Y, Iterable) and len(Y) == 0):
             raise ValueError("'X' and 'Y' must contain at least one value.")
         
-        if len(X) != len(Y):
+        if isinstance(X, Iterable) and isinstance(Y, Iterable) and len(X) != len(Y):
             raise ValueError(f"Length of 'X' and 'Y' must match.")
         
         self.X = X
